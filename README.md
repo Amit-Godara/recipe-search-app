@@ -30,7 +30,7 @@ Then open http://localhost:8000 in your browser.
 cd recipe-search-app
 npx http-server -p 8000
 ```
-Then open http://localhost:8000 in your browser.
+https://recipe-search-app1.vercel.app/
 
 **Using VS Code:**
 Install the "Live Server" extension, right-click `index.html`, and choose "Open with Live Server".
