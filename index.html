@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Recipe Search</h1>
+    <p class="tagline">Find recipes by ingredient or name</p>
+  </header>
+
+  <main>
+    <form id="search-form" class="search-form">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Try 'chicken' or 'pasta'..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="status-message" class="status-message"></p>
+
+    <section id="results" class="results-grid"></section>
+  </main>
+
+  <!-- Recipe detail modal -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal">
+      <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Recipe data provided by <a href="https://www.themealdb.com/" target="_blank" rel="noopener">TheMealDB</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
